@@ -1,0 +1,48 @@
+Aula 1
+Sistema operacional é um software ou conjunto de softwares
+sua função é gerenciar os recursos de um sistema
+(componentes de hardware, sistemas de arquivos, programas de terceiros...)
+estabelece uma interface entre o hardware e o usuário
+
+KERNEL ou núcleo do sistema operacional
+é a ponte entre o usuário e o hardware
+estabelece a camada de abstração de baixo nível (linguagem de máquina) com o hardware
+gerencia recursos como processador, RAM, sistemas de arquivos e dispositivos
+
+Linux é um sistema operacional
+um dos mais utilizados em servidores e por desenvolvedores de software
+não tão utilizado em computadores pessoais
+começou a ser desenvolvido Linus Torvalds em 1991 inspirado no Unix
+O Linux (o kernel do sistema operacional) é suportado por uma comunidade internacional de desenvolvedores
+O kernel do Linux está disponível gratuitamente por qualquer pessoa
+o kernel é mantido pela Linux Foundation, organização sem fins lucrativos.
+Para manter o Kernel atualizado e implementar melhorias, a fundação é mantida
+por doações de grandes empresas que utilizam Linux em seus produtos e serviços
+
+Distribuições Linux
+é um pacote que consiste em um kernel Linux, mais uma seleção de aplicativos
+podem ser mantidos por uma empresa ou uma comunidade de usuários
+o objetivo é otimizar o kernel e os aplicativos para um determinado tipo de uso
+ou grupo de usuários
+
+Sistemas embarcados
+combinação de hardware e software projetados para cumprir uma função
+específica dentro de um sistema maior
+Podem ser encontrados em aplicações automotivas, médicas e militares
+
+Modelo cliente-servidor
+é uma estrutura de aplicação que distribui as tarefas e cargas de trabalho
+entre os fornecedores de um recurso ou serviço (servidores) e os requerentes (clientes)
+
+Aula 2
+Máquina virtuais
+são computadores de software com a mesma fucionalidade de computadores físicos
+elas executam aplicativos e um sistema operacional
+No entanto, as máquinas virtuais são arquivos de computador executados em um
+computador físico e se comportam como tais
+
+comandos:
+$ reboot
+	para reiniciar a máquina
+$ shutdown 0
+	para desligar a máquina

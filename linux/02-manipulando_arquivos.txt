@@ -1,0 +1,80 @@
+Aula 1
+$ (cifrão) indica um usuário com restrições
+- # (hash)  super usuário (usuário root)
+
+Comandos:
+date
+clear
+pwd
+cd
+ls
+
+filtrando a exibição de arquivos
+ls | more
+	possibilita leitura de uma lista muito grande
+touch
+	cria arquivo vazio
+^
+	negar
+find
+	buscar arquivos
+mkdir
+	cria um diretório
+rm
+	exclui um arquivo
+rmdir
+	exclui um diretório
+rm -rf
+	exclui tudo recursivamente
+ls --help
+	pedir ajudar sobre o ls
+man ls
+	abre o manual em um paginador
+
+Logando como usuário root
+sudo passwd root
+	cria uma senha para o usuário root
+su
+	loga como usuário root
+
+Liberando acesso remoto do usuário root
+mude a configuração no arquivo sshd_config
+sudo nano /etc/ssh/sshd_config
+
+modifique de:
+- #PermitRootLogin prohibit-password
+para:
+PermitRootLogin yes
+
+agora restarte o serviço
+para visualizar o status:
+systemctl status sshd
+para reiniciar:
+sudo systemctl restart sshd
+
+Trabalhando com arquivos de texto
+vi arquivo.txt
+	cria um arquivo e abre com o vi
+Para usar o vi:
+primeiro digite i para abrir o modo de inserção
+agora você já pode editar o texto
+para sair, primeiro use a tecla ESC
+agora digite :wq
+sendo w para salvar e q para sair
+
+Histórico de comandos
+history
+	mostra todos os comandos utilizados pelo o usuário
+!3
+	executa o terceiro comando da lista de comandos do histórico
+!!
+	executa o último comando do histórico
+history | grep "ls"
+	mostra os comandos presentes no histórico que contém ls
+export HISTTIMEFORMAT="%c "
+	para visualizar a data e hora em que o comando foi utilizado
+set +o history
+	para parar de armazenar os comandos no histórico
+set -o history
+	para voltar a armazenas os comandos no histórico
+

@@ -1,0 +1,115 @@
+Aula 1
+Introdução à cultura ágil
+agilidade está ligado a adptação e não é a mesma que velocidade.
+
+Manifesto ágil 2001
+4 valores e 12 princípios
+Valores:
+1. pessoas são mais importantes que ferramentas.
+2. software funcionando é melhor que uma documentação bem feita.
+3. adptar melhor que seguir o plano.
+4. colaborar com o cliente melhor que negociação de contratos.
+
+princípios:
+satisfazer o cliente com entrega contínua e valor agregado no software.
+aceitar mudanças de requisitos.
+preferir conversa face a face como método eficiente para transmitir informações.
+simplicidade, focar no essencial, dispensar perca de tempo.
+os intervalos regulares são importantes para refinar o andamento.
+
+características de um time ágil
+alinhado com o cliente e stakeholders (qualquer parte externa ao time).
+auto-organizado e responsável.
+multidisciplinar (troca de pontos de vista, opiniões diferentes).
+entrega valor continuamente.
+está sempre aprendendo.
+melhoria continua.
+possui métricas e metas claras.
+unido.
+
+importância da agilidade no mundo da tecnologia
+tecnologia está ligado a inovação.
+entregas rápidas com um máximo valor.
+permite uma maior eficiência.
+
+VUCA
+V - volátil
+U - incerto
+C - complexo
+A - ambíguo
+
+Aula 2
+Gerenciamento de projetos
+Processo é um procedimento bem definido
+segue sempre os mesmos passos
+é replicável e regularmente repetido
+Projeto tem resultado exclusivo
+tem início e fim bem definidos
+representa um esforço temporário
+
+modelo tradicional (em cascata)
+as etapas ocorre em sequência e são dependentes da conclusão da etapa anterior.
+
+modelo ágil (SCRUM)
+gestão em ciclos e de forma incremental.
+valor entregue continuamente com o auxílio do feedback.
+
+o que é gestão ágil?
+uma forma de gestão que seja
+flexível e adptável
+colaborativa e transparente
+voltada ao aprendizado
+entrega contínua de valor
+
+Aula 3
+Métodos e ferramentas ágeis
+Scrum é um framework
+ajuda a gerar valor
+com soluções adaptativas para problemas complexos.
+
+O Scrum se baseia na observação e na eficiência.
+
+Pilares do Scrum:
+transparência, inspeção, adaptação.
+
+O Scrum é um framework porque não define como fazer as etapas, sendo adaptável.
+Diferentemente de uma metodologia que define um passo a passo.
+
+Extreme Programming (XP)
+método ágil com interação próxima com clientes
+testagem constantes e ciclos de desenvolvimentos curtos.
+
+tem no XP:
+ciclos, cerimônias, testes, programação em pares, feedback, 
+aproximação com o cliente, flexibilidade.
+
+Kanban:
+
+OKR:
+método de gestão ágil
+simplificar a forma de encarar os objetivos estratégicos de uma empresa
+descrições qualitativas que direcionam
+claro, inspirador, desafiador, alinhado com a missão do negócio
+
+Key Results (KRs)
+são metas que determinam o atigimento do objetivo
+servem como referência do progresso alcançado
+baseadas em indicadores-chave de desempenho
+quantitativas
+SMART: específica, mensurável, atingível, relevantes e temporais
+geralmente são estabelecidos de 2 a 5 KRs
+
+benefícios:
+agilidade, cooperação, transparência, monitoramento contínuo
+
+algumas ferramentas para gestão ágil:
+Trello
+Notion
+Miro
+Monday
+EasyRetro
+Jira
+Clickup
+Pipefy
+Asana...
+
