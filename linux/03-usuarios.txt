@@ -1,0 +1,71 @@
+Usuário
+useradd joao
+	para criar um usuário chamado joao
+userdel -f
+	para excluir um usuário -f para forçar
+passwd joao
+	adicionar uma senha para o usuário joao
+chsh -s /bin/bash joao
+	especifíca o shell que o usuário irá utilizar
+userdel -r
+	-r para remover o diretório home do usuário
+useradd -m -c "João da Silva" -s /bin/bash
+	-m para criar o diretório home para o usuário
+	-c para nome completo
+	-s para especificar o shell que o usuário utilizará
+usermod joao -s /bin/bash
+	para alterar o parâmetro -s do usuário depois de criá-lo
+passwd joao -e
+	expira a senha do usuário joão imediatamente,
+	se especificar uma data, a senha expira nessa data
+cat /etc/passwd
+	consultar usuários que têm acesso ao servidor
+
+Shell Script
+useradd ... -p $(openssl passwd -crypt Senha123)
+	cria um usuário com a senha definida como Senha123
+	-p o parâmetro p só aceita senha encriptada
+	-crypt não funcionou, mas -1 funcionou
+echo "texto"
+	escreve texto no terminal
+chmod +x criar_user.sh
+	permite que o arquivo criar_user.sh seja executado
+./criar_user.sh
+	para executar o arquivo criar_user.sh
+
+Grupos
+cat /etc/group
+	mostra o arquivo de grupos no terminal
+usermod -G adm,sudo mariana
+	-g para adicionar a um único grupo
+	-G para mais de um grupo
+	obs: retira o usuário dos grupos anteriores
+groupadd GRP_ADM
+	para criar um grupo
+groupdel GRP_TESTE
+	para excluir um grupo
+gpasswd -d mariana sudo
+	remove o usuário mariana do grupo sudo
+
+Sistema de permissões
+rwx	rwx	rwx
+dono	grupo	outros
+
+R - Read (leitura)
+W - Write (gravação)
+X - Execute (Execução)
+
+chown debora:GRP_ADM /adm/
+	muda o dono do grupo para mariana e o grupo para GRP_ADM
+	do diretório /adm/
+
+Leitura (R)	4
+Gravação (W)	2
+Execução (X)	1
+Nenhuma		0
+
+chmod 750 /adm/
+	altera as permissões do diretório /adm/ para
+	dono: todas permissões, grupo: leitura e execução
+	outros: nenhum
+	os números são as somas dos valores
