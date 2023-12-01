@@ -1,0 +1,149 @@
+aula 01
+Versionamento de código
+Sistemas de controle de versão:
+- controlam as versões de um arquivo ao longo do tempo.
+- registra o histórico de atualizações de um arquivo.
+- organização, controle e segurança.
+
+Tipos de sistemas de controle de versão
+VCS Centralizado (CVCS)
+apenas um servidor contém todos os arquivos responsáveis pelo controle de versão
+VCS Distribuído (DVCS)
+cada repositório é duplicado localmente, que permite edição mesmo com servidor
+fora do ar.
+
+Git: Sistema de controle de versão distribuído
+- Gratuito e Open Source
+- Ramificações (branching) e fusões (merging) eficientes
+- Leve e rápido
+
+GitHub: Plataforma de hospedagem de código para controle de versão com Git, e
+colaboração
+- Comunidade ativa
+- Utilizado mundialmente
+
+comando:
+git config --global init.defaultBranch main
+para definir a branch inicial de todo repositóirio como main.
+
+Autenticação via token:
+para salvar o token de acesso:
+git config --global credential.helper cache
+para armazenar temporariamente
+
+git config --global credential.helper store
+para armazenar indefinidamente
+
+Autenticação via SSH:
+Gerar a chave SSH:
+ssh-keygen -t ed25519 -C "email_do_github"
+
+Iniciando o ssh-agent
+eval "$(ssh-agent -s)"
+
+Adicionando a chave privada ao ssh-agent
+ssh-add ~/.ssh/id_ed25519
+
+depois é só adicionar a chave pública ao GitHub.
+
+aula 03
+criando e clonando repositórios
+existem duas formas de obter um repositório Git na sua máquina
+1. Transformando um diretório local que não está sob controle
+de versão, num repositório Git.
+2. Clonando um repositório Git existente.
+
+git clone url_do_repositório nome_para_diretorio
+para escolher um nome para o diretório clonado
+
+git remote -v
+para ver o endereço do repositório remoto
+
+git remote add origin url
+para adicionar um repositório remoto ao repositório local
+
+git clone url --branch nome_da_branch --single-branch
+para clonar uma única branch específica do repositório remoto
+
+git status
+mostra o status da árvore de trabalho e a área de preparação
+
+git log
+mostra informações sobre o commit
+
+echo nome_da_pasta > .gitignore
+para adicionar alguma pasta ou arquivo ao git ignore
+
+aulas/.gitkeep
+convensão para o git reconhecer diretórios vazios
+
+Desfazendo alterações
+rm -rf .git
+desfaz a ação de tranformar um diretório em um repositório git
+
+git restore nome_do_arquivo
+restaura o arquivo, descartando todas as alterações feitas desde
+o último commit
+
+git commit --amend -m "nova mensagem"
+altera o nome do útlimo commit
+
+git reset --opcao
+opcoes:
+soft -> manda os arquivos dos commits posteriores para a área de
+stage
+mixed (padrão) -> manda os arquivos dos commits posteriores para
+a área de trabalho
+hard -> apaga todos os arquivos dos commits posteriores
+
+git reflog
+log mais detalhado das alterações feitas no repositório
+
+git push -u origin main
+para enviar as alterações do repositório local para o remoto.
+
+Trabalhando com Branches
+Branch: uma ramificação do projeto
+- é um ponteiro móvel para um commit no histórico do repositório
+- Quando você cria uma nova Branch a partir de outra existente,
+a nova se inicia apontando para o mesmo commit da Branch que
+estava quando foi criada.
+
+git checkout -b teste
+muda a branch atual para a branch chamada teste
+
+git branch -v
+mostra os últimos commits de cada branch
+
+git merge teste
+para mesclar a branch teste com a branch main, caso você esteja
+na branch main como atual
+
+git branch -d teste
+deleta a branch teste
+
+git fetch origin main
+para baixar as informações do repositório remoto, mas sem mesclar
+
+git diff main origin/main
+para visualizar as diferenças entre os repositórios
+
+git merge origin/main
+se quiser trazer as alterações do repositório remoto para o local
+
+git clone url --branch nome_da_branch --single-branch
+para baixar uma única branch do repositório remoto
+
+git stash
+arquiva as modificações feitas na branch
+
+git stash list
+lista as modificações feitas e salvas na branch
+
+git stash pop
+para trazer as alterações e excluir a alteração mais recente 
+dessa pilha
+
+git stash apply
+se quiser manter essa modificação na lista para uso posterior
+
